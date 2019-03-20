@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580E467F222F6D780095B4E2 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580E467E222F6D780095B4E2 /* CreateTaskViewController.swift */; };
 		58FAD663222E22BD00AF4E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FAD662222E22BD00AF4E8F /* AppDelegate.swift */; };
-		58FAD665222E22BD00AF4E8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FAD664222E22BD00AF4E8F /* ViewController.swift */; };
 		58FAD668222E22BD00AF4E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FAD666222E22BD00AF4E8F /* Main.storyboard */; };
 		58FAD66B222E22BD00AF4E8F /* Nagger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58FAD669222E22BD00AF4E8F /* Nagger.xcdatamodeld */; };
 		58FAD66D222E22BE00AF4E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58FAD66C222E22BE00AF4E8F /* Assets.xcassets */; };
 		58FAD670222E22BE00AF4E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FAD66E222E22BE00AF4E8F /* LaunchScreen.storyboard */; };
 		58FAD67B222E22BE00AF4E8F /* NaggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FAD67A222E22BE00AF4E8F /* NaggerTests.swift */; };
 		58FAD686222E22BE00AF4E8F /* NaggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FAD685222E22BE00AF4E8F /* NaggerUITests.swift */; };
+		58FAD695222E244500AF4E8F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FAD694222E244500AF4E8F /* Task.swift */; };
+		58FC54F8223DA8DB00A602FF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FC54F7223DA8DB00A602FF /* HomeViewController.swift */; };
+		58FC54FA223DC53100A602FF /* InstantiableFromStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FC54F9223DC53100A602FF /* InstantiableFromStoryboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		580E467E222F6D780095B4E2 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 		58FAD65F222E22BD00AF4E8F /* Nagger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nagger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FAD662222E22BD00AF4E8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58FAD664222E22BD00AF4E8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58FAD667222E22BD00AF4E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58FAD66A222E22BD00AF4E8F /* Nagger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nagger.xcdatamodel; sourceTree = "<group>"; };
 		58FAD66C222E22BE00AF4E8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		58FAD681222E22BE00AF4E8F /* NaggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FAD685222E22BE00AF4E8F /* NaggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaggerUITests.swift; sourceTree = "<group>"; };
 		58FAD687222E22BE00AF4E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58FAD694222E244500AF4E8F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		58FC54F7223DA8DB00A602FF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		58FC54F9223DC53100A602FF /* InstantiableFromStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiableFromStoryboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		580E467D222F6D290095B4E2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				580E467E222F6D780095B4E2 /* CreateTaskViewController.swift */,
+				58FC54F7223DA8DB00A602FF /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		58FAD656222E22BD00AF4E8F = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +114,15 @@
 		58FAD661222E22BD00AF4E8F /* Nagger */ = {
 			isa = PBXGroup;
 			children = (
+				580E467D222F6D290095B4E2 /* ViewControllers */,
+				58FAD693222E237A00AF4E8F /* Models */,
 				58FAD662222E22BD00AF4E8F /* AppDelegate.swift */,
-				58FAD664222E22BD00AF4E8F /* ViewController.swift */,
 				58FAD666222E22BD00AF4E8F /* Main.storyboard */,
 				58FAD66C222E22BE00AF4E8F /* Assets.xcassets */,
 				58FAD66E222E22BE00AF4E8F /* LaunchScreen.storyboard */,
 				58FAD671222E22BE00AF4E8F /* Info.plist */,
 				58FAD669222E22BD00AF4E8F /* Nagger.xcdatamodeld */,
+				58FC54F9223DC53100A602FF /* InstantiableFromStoryboard.swift */,
 			);
 			path = Nagger;
 			sourceTree = "<group>";
@@ -126,6 +143,14 @@
 				58FAD687222E22BE00AF4E8F /* Info.plist */,
 			);
 			path = NaggerUITests;
+			sourceTree = "<group>";
+		};
+		58FAD693222E237A00AF4E8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58FAD694222E244500AF4E8F /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58FAD665222E22BD00AF4E8F /* ViewController.swift in Sources */,
+				58FAD695222E244500AF4E8F /* Task.swift in Sources */,
 				58FAD66B222E22BD00AF4E8F /* Nagger.xcdatamodeld in Sources */,
+				58FC54FA223DC53100A602FF /* InstantiableFromStoryboard.swift in Sources */,
 				58FAD663222E22BD00AF4E8F /* AppDelegate.swift in Sources */,
+				580E467F222F6D780095B4E2 /* CreateTaskViewController.swift in Sources */,
+				58FC54F8223DA8DB00A602FF /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
